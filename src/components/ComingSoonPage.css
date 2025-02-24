@@ -1,0 +1,232 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full width and height */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Flex container for the whole page */
+.coming-soon-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-wrap: wrap; /* Allow wrapping of content */
+}
+
+/* Left section with the image */
+.left-section {
+  flex: 1;
+  background-color: #b19393 !important;
+}
+
+.left-section .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right section for the content */
+.right-section {
+  flex: 1;
+  background: linear-gradient(135deg, #0092e8, #666666);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Countdown timer */
+.countdown-timer {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.countdown-timer div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.countdown-timer span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Email signup */
+.email-signup {
+  margin-top: 30px;
+}
+
+.email-signup form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.email-signup input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.email-signup button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.email-signup button:hover {
+  background-color: #000000;
+}
+
+/* Social Media Icons */
+.social-links {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #2b2621;
+}
+
+/* Mobile Responsiveness */
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .coming-soon-container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left-section {
+    height: 200px; /* Control height for small screens */
+  }
+
+  .right-section {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .countdown-timer {
+    flex-direction: column; /* Stack countdown timer items */
+    font-size: 1.5rem;
+  }
+
+  .countdown-timer div {
+    padding: 8px 15px;
+  }
+
+  .email-signup input {
+    width: 200px; /* Adjust input width */
+  }
+
+  .email-signup button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .social-links {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .coming-soon-container {
+    padding: 10px; /* Add padding to prevent content from touching edges */
+  }
+
+  .left-section {
+    height: 150px; /* Adjust height even more for very small screens */
+  }
+
+  .right-section {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .countdown-timer {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .countdown-timer div {
+    padding: 5px 10px;
+  }
+
+  .email-signup input {
+    width: 180px;
+  }
+
+  .email-signup button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .social-links {
+    font-size: 1.3rem;
+  }
+  
+}
