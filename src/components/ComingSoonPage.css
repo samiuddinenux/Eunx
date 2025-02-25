@@ -228,5 +228,55 @@ html, body {
   .social-links {
     font-size: 1.3rem;
   }
-  
+  /* Medium screens (min-width: 481px, max-width: 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .coming-soon-container {
+    flex-direction: row; /* Maintain row layout for tablets/laptops */
+    justify-content: center;
+  }
+
+  .left-section {
+    height: 300px; /* Adjust height for medium screens */
+  }
+
+  .right-section {
+    padding: 25px;
+  }
+
+  .logo {
+    width: 180px; /* Slightly smaller logo for medium screens */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .countdown-timer {
+    flex-direction: row;
+    font-size: 1.8rem;
+  }
+
+  .countdown-timer div {
+    padding: 10px 20px;
+  }
+
+  .email-signup input {
+    width: 220px;
+  }
+
+  .email-signup button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+  .scroll
+
+  .social-links {
+    font-size: 1.7rem;
+  }
+}
+
 }

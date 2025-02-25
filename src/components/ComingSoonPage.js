@@ -9,7 +9,6 @@ import {
   Button,
   TextField,
   Box,
-  dfsdfsd,
 } from "@mui/material";
 const ComingSoonPage = () => {
   const [email, setEmail] = useState("");
